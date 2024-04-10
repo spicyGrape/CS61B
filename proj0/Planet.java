@@ -48,5 +48,11 @@ public class Planet{
 		}
 		return netForceExertedByY;
 	}
+	public void update(double dt, double xForce, double yForce){
+		xxVel = xxVel + xForce * dt / mass;
+		yyVel = yyVel + yForce * dt / mass;
+		xxPos = xxPos + xxVel * dt;
+		yyPos = yyPos + yyVel * dt;
+	}
 }
 
