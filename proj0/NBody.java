@@ -10,7 +10,7 @@ public class NBody{
 		Planet[] planets = new Planet[numP];
 		in.readDouble();
 		for(int i = 0; i < numP; i=i+1){
-			planets[i] = new Planet(in.readDouble(),in.readDouble(),in.readDouble(),in.readDouble(),in.readDouble(),"images/"+in.readString());
+			planets[i] = new Planet(in.readDouble(),in.readDouble(),in.readDouble(),in.readDouble(),in.readDouble(),in.readString());
 		}
 		return planets;
 	}
